@@ -78,30 +78,12 @@
 }
 
 .videoPage1{
-    display: flex;
-    align-items: center;
+    text-align: center;
     margin-top: 70px;
-    justify-content: center;
 }
 
-.videoPage1 .historyMusic{
-    color: rgb(118, 22, 126);
-    font-family: 'Koulen', cursive;
-    border: 2px solid white;
-    height: auto; width: auto;
-    padding: 15px;
-    background-image: url(https://rockfm-cdnmed.agilecontent.com/resources/jpg/1/7/1625225554471.jpg);
-    text-shadow: 2px gold;
-}
-
-.videoPage1 .historyMusic2{
-    color: rgb(118, 22, 126);
-    font-family: 'Koulen', cursive;
-    border: 2px solid white;
-    height: auto; width: auto;
-    padding: 15px;
-    background-image: url(https://e.rpp-noticias.io/normal/2015/12/29/323332_54051.jpg);
-    text-shadow: 2px gold;
+.videoPage1 iframe{
+    border: 1px solid gold;
 }
 
 .videoPag2{
