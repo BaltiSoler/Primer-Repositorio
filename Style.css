@@ -491,10 +491,8 @@
 
 
 
-.contact a{
+.contact h3{
     text-align: right;
-    text-decoration: none;
-    list-style-type: none;
     color: white;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
@@ -512,6 +510,10 @@
     background-color: rgb(54, 54, 54);
     margin: 0;
 
+}
+
+.navInte{
+    transform: translateX(-30px);
 }
 
 .antesDespues ul li{
@@ -932,6 +934,14 @@
 
 .bodyTour{
     background-color: rgb(54, 54, 54);
+}
+
+.navTour{
+    transform: translateX(-60px);
+}
+
+.tourH3{
+    margin-right: 30px;
 }
 
 .tour22 h1{
@@ -1424,11 +1434,16 @@
 }*/
 }
 
-/*Style de discografia*/
+/*---------------------------------------------------------Style de discografia----------------------------------------------------------------*/
 
 .bodyDiscografia{
     margin: 0px;
     background-color: rgb(54, 54, 54);
+}
+
+.headerSecundario a{
+    text-decoration: none;
+    color: white;
 }
 
 .disco{
@@ -1460,7 +1475,7 @@
 }
 
 .discografia img:hover{
-    height: 600px; width: 600px;
+    height: 300px; width: 300px;
     text-align: center;
     border: 1px solid gold;
 }
