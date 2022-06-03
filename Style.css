@@ -21,10 +21,12 @@
 .titulo{
     font-family: 'Dancing Script', cursive;
     color: black;
+    font-weight: bold;
     display: block;
     text-align: center;
     margin: 30px;
     margin-bottom: 10px;
+    transform: translateY(30px);
 }
 
 .headerUno{
@@ -56,6 +58,9 @@
 .regist {
     margin-right: 10px;
 }
+.regist a:hover{
+    text-decoration: underline gold;
+}
 
 .navPrincipal{
     text-align: center;
@@ -73,9 +78,6 @@
     text-decoration: underline gold;
 }
 
-.regist a:hover{
-    text-decoration: underline gold;
-}
 
 .videoPage1{
     text-align: center;
@@ -123,16 +125,16 @@
     margin-right: 10px;
 }
 
-
 /*------------------------------------------------------ GRID INDEX  ---------------------------------------------------------------------*/
 .gridIndex {
     display: grid;
-    grid-template-rows: 9% auto auto auto auto;
+    grid-template-rows: 9% auto auto auto 40px auto;
     grid-template-columns: auto auto auto;
     grid-template-areas: "header header header"
     "titulo titulo titulo"
     "videoPage1 videoPage1 videoPage1"
     "videoPag2 videoPag2 videoPag2"
+    "boots boots boots"
     "footer footer footer";
 }
 
@@ -155,6 +157,13 @@
 .footerPrincipal {
     grid-area: footer;
 }
+
+.dropdown{
+    grid-area: boots;
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 /*-------------------------------------------------------- MediaQuerie Index -----------------------------------*/
 
@@ -480,6 +489,8 @@
     text-decoration: underline rgb(188, 164, 23);
 }
 
+
+
 .contact a{
     text-align: right;
     text-decoration: none;
@@ -720,7 +731,6 @@
 
 /*-------------------------------------------------------------Style de "MediaVideos"-----------------------------------------------------------*/
 
-
 .mediaVideos img{
     height: 600px; width: 600px;
     border: 1px solid gold;
@@ -735,12 +745,6 @@
     color: white;
 }
 
-.ritz img{
-    border: 1px solid gold;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-
 .mediaVideos h3{
     margin-left: 100px;
     margin-top: 10px;
@@ -748,38 +752,89 @@
     color: white;
 }
 
-.sweetChild h3{
-    text-align: center;
+.dosConcie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ritz{
+    transform: translateX(80px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.tokio{
+    transform: translateX(-100px);
+}
+
+.tokio h3{
+    text-align: right;
     margin-right: 150px;
 }
 
-.sweetChild h2{
-    text-align: center;
+.tokio h2{
+    text-align: right;
     margin-right: 150px;
 }
 
-.sweetChild img{
-    height: 450px; width: 600px;
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.otrosDos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.paris{
+    transform: translateX(-100px);
+}
+
+.paris img{
     border: 1px solid gold;
-    margin-left: 250px;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
-.sweetChild1 img{
-    height: 450px; width: 600px;
-    border: 1px solid gold;
-    margin-left: 650px;
+.paris h3{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.paris h2{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.argen img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
-.sweetChild1 h3{
-    text-align: right;
-    margin-right: 300px;
+
+.argen h2{
+    text-align: left;
+    margin-right: 150px;
 }
 
-.sweetChild1 h2{
-    text-align: right;
-    margin-right: 300px;
+.argen h3{
+    text-align: left;
+    margin-right: 150px;
 }
 
 /*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
