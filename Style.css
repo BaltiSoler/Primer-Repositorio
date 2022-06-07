@@ -36,11 +36,13 @@
     margin-top: 10px;
 }
 
-.headerUno h5{
+.heaH5{
     font-family: 'Rajdhani', sans-serif;
     color: white;
     margin-left: 10px;
 }
+
+
 
 .headerPrincipal li{
     list-style-type: none;
@@ -72,6 +74,10 @@
     border-right: 3px solid gold;
     border-collapse: collapse;
     font-family: 'Abel', sans-serif;
+}
+
+.navIndex{
+    transform: translateY(-25px);
 }
 
 .navPrincipal a:hover{
@@ -165,9 +171,9 @@
 }
 
 
-/*-------------------------------------------------------- MediaQuerie Index -----------------------------------*/
+/*----------------------------------------------------------- MediaQuerie Index ----------------------------------------------------------------*/
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 480px) {
     
     *{
         margin: 0;
@@ -188,29 +194,16 @@
     }
 
     .titulo{
-        margin-top: 30px;
+        margin-top: 40px;
         text-align: center;
-    }
-
-    .videoPage1{
-        margin-top: 20px;
         margin-bottom: 0;
-    }
-
-    .videoPage1 iframe{
-        height: 250px; width: 250px;
-    }
-
-    .videoPage1 .historyMusic{
-        padding: 5px;
-    }
-
-    .videoPage1 .historyMusic2{
-        padding: 5px;
+        transform: translateY(50px);
     }
 
     .videoPag2{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .videoPage2-1{
@@ -224,60 +217,13 @@
         display: block;
         margin-top: -100px;
         margin-left: 20px;
+        transform: translateX(-50px);
     }
 
     .videoPag2 iframe{
         width: 250px; height: 250px;
     }
-
-    /* .gridIndex Media {
-
-        display: grid;
-        grid-template-rows: 50px 50px 70px 300px 250px 250px 50px;
-        grid-template-columns: auto;
-        grid-template-areas: "arriba"
-        "header"
-        "titulo"
-        "historia"
-        "video1"
-        "video2"
-        "footer";
-    }
-    
-    .headerUno {
-        grid-area: arriba;
-    }
-    
-    .navPrincipal{
-        grid-area: header;
-    }
-
-    .titulo {
-        grid-area: titulo;
-    }
-    
-    .videoPage1 {
-        grid-area: historia;
-    }
-    
-    .videoPage2-1 iframe{
-        grid-area: video1;
-    }
-    
-    .videoPage3 iframe{
-        grid-area: video2;
-    }
-
-    .footerIndex {
-        grid-area: footer;
-    }
-*/
-
-
 }
-
-
-
 
 /*-------------------------------------------Style de la subpagina "registrarse"----------------------------------------------------------------*/
 
@@ -345,7 +291,7 @@
     background-color: gold;
     text-decoration: none;
     list-style-type: none;
-    margin: 0px 0px;
+    margin: 0px;
 }
 
 .footerRegis a{
@@ -374,10 +320,15 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .crearCuenta h2{
+        transform: translateX(-45px);
+    }
+}
 
 /*-----------------------------------------------Style de la subpagina "inicar sesion"----------------------------------------------------------*/
 
-.bodyIniciarSesion{
+.bodyIniciarSesion {
     background-color: black;
     margin: 20px 20px;
     color: white;
@@ -489,8 +440,6 @@
     text-decoration: underline rgb(188, 164, 23);
 }
 
-
-
 .contact h3{
     text-align: right;
     color: white;
@@ -499,21 +448,11 @@
     margin-right: 10px;
 }
 
-
-
-/*--------------------------------------------------Style del "integrantes"---------------------------------------------------------------------*/
-.integHead{
-    margin-right: 90px;
-}
+/*-----------------------------------------------------Style de "integrantes--------------------------------------------------------*/
 
 .bodyIntegrantes{
     background-color: rgb(54, 54, 54);
     margin: 0;
-
-}
-
-.navInte{
-    transform: translateX(-30px);
 }
 
 .antesDespues ul li{
@@ -540,31 +479,6 @@
     background-color: gold;
 }
 
-.imgInteg{
-    display: inline-block;
-}
-
-.imgInteg img{
-    height: 400px; 
-    width: 400px;
-    border: 1px solid white;
-    margin-top: 30px;
-}
-
-.imgInteg .img1{
-    margin-left: 360px;
-}
-
-.footInt{
-    margin-top: 20px;
-}
-
-/*-----------------------------------------------------Style de "integrantes,1985/actual--------------------------------------------------------*/
-
-.left ul{
-    text-align: left;
-}
-
 .integrantes85Head a{
     text-decoration: none;
     color: white;
@@ -579,6 +493,7 @@
 .left ul .backGold{
     margin-left: 20px;
 }
+
 .left ul .backGold3{
     margin-left: 20px;
 }
@@ -668,7 +583,6 @@
 
 /*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
 
-
 .bodyMedia{
     background-color: rgb(54, 54, 54);
     margin: 0;
@@ -725,11 +639,10 @@
 }
 
 .photos img:hover{
-    height: 600px; width: 600px;
+    height: 400px; width: 400px;
     text-align: center;
     border: 1px solid gold;
 }
-
 
 /*-------------------------------------------------------------Style de "MediaVideos"-----------------------------------------------------------*/
 
@@ -757,6 +670,121 @@
 .dosConcie{
     display: flex;
     justify-content: space-between;
+}
+
+.CarruselPropio{
+    height: 600px;
+    width: 600px;
+}
+
+.ritz{
+    transform: translateX(80px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.tokio{
+    transform: translateX(-100px);
+}
+
+.tokio h3{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio h2{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.otrosDos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.paris{
+    transform: translateX(-100px);
+}
+
+.paris img{
+    border: 1px solid gold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.paris h3{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.paris h2{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.argen{
+    transform: translateX(80px);
+}
+
+.argen img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    width: 600px;
+    transform: translateX(-230px);
+}
+
+.argen h2, h3{
+    text-align: left;
+    margin-right: 150px;
+}
+                        /*------------------------------- MediaQuerieVideos--------------------------------------*/
+
+@media screen and (max-width: 1300px){
+    
+.mediaVideos img{
+    height: 600px; width: 600px;
+    border: 1px solid gold;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.mediaVideos h2{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mediaVideos h3{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.dosConcie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CarruselPropio{
+    height: 600px;
+    width: 600px;
 }
 
 .ritz{
@@ -826,8 +854,8 @@
     border-left: none;
     margin-top: 20px;
     margin-left: 30px;
+    transform: translateX(30px);
 }
-
 
 .argen h2{
     text-align: left;
@@ -837,6 +865,164 @@
 .argen h3{
     text-align: left;
     margin-right: 150px;
+}
+}
+                        /*------------------------------- MediaQuerieVideos Movil--------------------------------------*/
+
+@media screen and (max-width: 480px){    
+    
+.bodyVideos{
+        margin: 0;
+        padding: 0;
+    }
+  
+.guns{
+    font-size: 20px;
+}
+
+.mediaVideos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.navVideos{
+        transform: translateY(-15px);
+    }
+
+.navVideos a{
+        border: none;
+    }
+    
+.mediaVideos img{
+    height: 200px; width: 400px;
+    border: 1px solid gold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mediaVideos h2{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mediaVideos h3{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.phvd{
+    text-align: center;
+    transform: translateX(-30px);
+}
+
+.dosConcie{
+    display: flex;
+    flex-direction: column;
+}
+
+.CarruselPropio{
+    height: 200px;
+    width: 300px;
+}
+
+.ritz{
+    transform: translateX(0px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.ritz h2{
+    text-align: center;
+}
+
+.ritz h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tokio{
+    transform: translateX(0px);
+}
+
+.tokio h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tokio h2{
+    text-align: center;
+    margin-right: 1px;
+}
+
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.otrosDos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.argen{
+    transform: translateX(20px);
+}
+
+.argen h2{
+    text-align: center;
+    transform: translateX(60px);
+}
+
+.argen h3{
+    margin-top: 10px;
+    text-align: center;
+    transform: translateX(50px);
+}
+
+.argen img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    margin-top: 0px;
+    margin-left: 0px;
+    transform: translateX(0px);
+}
+
+.paris{
+    transform: translateX(20px);
+}
+
+.paris img{
+    border: 1px solid gold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.paris h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.paris h2{
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 30px;
+}
 }
 
 /*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
@@ -928,7 +1114,6 @@
     grid-area: footer;
 }
 
-
 /*--------------------------------------------------------Style de tour-------------------------------------------------------------------------*/
 
 
@@ -937,7 +1122,7 @@
 }
 
 .navTour{
-    transform: translateX(-60px);
+    transform: translateX(-40px);
 }
 
 .tourH3{
@@ -1051,7 +1236,6 @@
     color: greenyellow;
     margin-right: 10px;
 }
-
 
 .uruguay{
     margin-top: 15px;
@@ -1213,59 +1397,6 @@
     margin-right: 10px;
 }
 
-/*.gridTour{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px 150px 100px 100px 100px 100px 100px 100px 70px;
-    grid-template-areas: "header"
-    "titulo"
-    "argentina"
-    "brasil"
-    "uruguay"
-    "perua"
-    "colombia"
-    "mexico"
-    "footer";
-}
-
-.headerTour{
-    grid-area: header;
-}
-
-.tour22{
-    grid-area: titulo;
-}
-
-.argentina{
-    grid-area: argentina;
-}
-
-.brasil{
-    grid-area: brasil;
-}
-
-.uruguay{
-    grid-area: uruguay;
-}
-
-.peru{
-    grid-area: perua;
-}
-
-.colombia{
-    grid-area: colombia
-}
-
-.mexico{
-    grid-area: mexico;
-}
-
-.footTour{
-    grid-area: footer;
-    margin-bottom: 40px;
-    margin-right: 20px;
-} */
-
 /*-------------------------------------------------------------Media de Tour -------------------------------------------------------------------*/
 
 @media screen and (max-width: 468px){
@@ -1288,7 +1419,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1298,12 +1429,13 @@
     height: 100px;
     margin-top: 0;
 }
+
 .brasil{
     margin: 10px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1319,7 +1451,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1335,7 +1467,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1352,7 +1484,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1362,14 +1494,13 @@
     height: 100px;
     margin-top: 10px;
 }
-
 
 .mexico{
     margin: 10px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     align-items: center;
@@ -1379,59 +1510,6 @@
     height: 100px;
     margin-top: 10px;
 }
-
-/*.gridTour{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: ;
-    grid-template-areas: "header"
-    "titulo"
-    "argentina"
-    "brasil"
-    "uruguay"
-    "perua"
-    "colombia"
-    "mexico"
-    "footer";
-}
-
-.headerTour{
-    grid-area: header;
-}
-
-.tour22{
-    grid-area: titulo;
-}
-
-.argentina{
-    grid-area: argentina;
-}
-
-.brasil{
-    grid-area: brasil;
-}
-
-.uruguay{
-    grid-area: uruguay;
-}
-
-.peru{
-    grid-area: perua;
-}
-
-.colombia{
-    grid-area: colombia;
-}
-
-.mexico{
-    grid-area: mexico;
-}
-
-.footTour{
-    grid-area: footer;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}*/
 }
 
 /*---------------------------------------------------------Style de discografia----------------------------------------------------------------*/
