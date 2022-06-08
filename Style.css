@@ -271,6 +271,8 @@
 .h3Regis{
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
+    transform: translateX(75px);
 }
 
 .snRegis{
@@ -280,6 +282,8 @@
 
 .edad{
     margin-top: 15px;
+    text-align: center;
+    transform: translateX(70px);
 }
 
 .selecEdad{
@@ -334,7 +338,6 @@
     text-align: center;
     transform: translateX(25%);
 }
-
 }
 
 
