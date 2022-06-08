@@ -324,7 +324,19 @@
     .crearCuenta h2{
         transform: translateX(-45px);
     }
+
+.edad{
+    text-align: center;
+    transform: translateX(23%);
 }
+
+.h3Regis{
+    text-align: center;
+    transform: translateX(25%);
+}
+
+}
+
 
 /*-----------------------------------------------Style de la subpagina "inicar sesion"----------------------------------------------------------*/
 
