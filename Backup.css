@@ -1,0 +1,1594 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------------------------Style del index----------------------------------------------------------------------*/
+
+.bodyIndex{
+    background-color: rgb(54, 54, 54);
+}
+
+.titulo{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 10px;
+    transform: translateY(30px);
+}
+
+.headerUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.heaH5{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+.headerPrincipal li{
+    list-style-type: none;
+}
+
+.headerPrincipal a{
+    text-decoration: none;
+    color: white;
+}
+
+.headerUno .regist li{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.regist {
+    margin-right: 10px;
+}
+.regist a:hover{
+    text-decoration: underline gold;
+}
+
+.navPrincipal{
+    text-align: center;
+}
+
+.navPrincipal a{
+    padding: 10px;
+    border-left: 3px solid gold;
+    border-right: 3px solid gold;
+    border-collapse: collapse;
+    font-family: 'Abel', sans-serif;
+}
+
+.navIndex{
+    transform: translateY(-25px);
+}
+
+.navPrincipal a:hover{
+    text-decoration: underline gold;
+}
+
+
+.videoPage1{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.videoPage1 iframe{
+    border: 1px solid gold;
+}
+
+.videoPag2{
+    display: flex;
+    flex-direction: row;
+}
+
+.videoPag2 .videoPage2-1 iframe{
+    border: 1px solid gold;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.videoPag2 .videoPage3 iframe{
+    border: 1px solid gold;
+    margin-top: 170px;
+    margin-left: 90px;
+}
+
+.footerPrincipal{
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.footerPrincipal nav img{
+    height: 20px; width: 20px;
+    margin-left: 2px; margin-right: 2px;
+    margin-top: 50px;
+}
+
+.footerPrincipal nav .footerContactanos{
+    height: 23px; 
+    width: 23px;
+    margin-right: 10px;
+}
+
+/*------------------------------------------------------ GRID INDEX  ---------------------------------------------------------------------*/
+.gridIndex {
+    display: grid;
+    grid-template-rows: 9% auto auto auto 40px auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "header header header"
+    "titulo titulo titulo"
+    "videoPage1 videoPage1 videoPage1"
+    "videoPag2 videoPag2 videoPag2"
+    "boots boots boots"
+    "footer footer footer";
+}
+
+.headerPrincipal {
+    grid-area: header;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.videoPage1 {
+    grid-area: videoPage1;
+}
+
+.videoPag2 {
+    grid-area: videoPag2;
+}
+
+.footerPrincipal {
+    grid-area: footer;
+}
+
+.dropdown{
+    grid-area: boots;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*----------------------------------------------------------- MediaQuerie Index ----------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .headerPrincipal{
+        width: 100%;
+    }
+    
+    .headerUno{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navPrincipal{
+        margin-top: 30px;
+    }
+
+    .titulo{
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 0;
+        transform: translateY(50px);
+    }
+
+    .videoPag2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videoPage2-1{
+        display: block;
+        transform: translateX(-100px);
+        margin-top: 2px;
+        margin-left: 7px;
+    }
+
+    .videoPage3{
+        display: block;
+        margin-top: -100px;
+        margin-left: 20px;
+        transform: translateX(-50px);
+    }
+
+    .videoPag2 iframe{
+        width: 250px; height: 250px;
+    }
+}
+
+/*-------------------------------------------Style de la subpagina "registrarse"----------------------------------------------------------------*/
+
+.bodyRegis{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.h1Regis{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.formRegis{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.crearCuenta{
+    width: 120px;
+    margin-left: 46%;
+}
+
+.crearCuenta h2{
+    font-family: 'Bebas Neue', cursive;
+    border: 2px solid gold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.formRegis select option{
+    color: black;
+    margin: 10px 0px;
+}
+
+.formRegis input{
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.h3Regis{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    transform: translateX(75px);
+}
+
+.snRegis{
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.edad{
+    margin-top: 15px;
+    text-align: center;
+    transform: translateX(70px);
+}
+
+.selecEdad{
+    margin-top: 15px;
+}
+
+.footerRegis a img{
+    color: black;
+    background-color: gold;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.footerRegis a{
+    padding: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.footerRegis h6{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-right: 7px;
+}
+
+.logoGnr{
+    animation: rebotar 2s;
+}
+@keyframes rebotar{
+    50% {
+        transform: scaleY(0.25);
+    }
+    50%{
+        transform: scaleX(0.25);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .crearCuenta h2{
+        transform: translateX(-45px);
+    }
+
+.edad{
+    text-align: center;
+    transform: translateX(23%);
+}
+
+.h3Regis{
+    text-align: center;
+    transform: translateX(25%);
+}
+}
+
+
+/*-----------------------------------------------Style de la subpagina "inicar sesion"----------------------------------------------------------*/
+
+.bodyIniciarSesion {
+    background-color: black;
+    margin: 20px 20px;
+    color: white;
+    text-align: center;
+}
+
+.h1Sesion{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+}
+
+.formSesion label{
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.formSesion input{
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cuentaNueva{
+    margin: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cuentaNueva h4{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.cuentaNueva a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*--------------------------------------------Style de la subpagina "contactanos"---------------------------------------------------------------*/
+
+.bodyContact{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.h1Contact{
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+}
+
+.formContact{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.lObserv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formContact input{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inpEnRes input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formContact label textarea{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------------Header de todos los demas html-------------------------------------------------------------*/
+
+.headerSecundario{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.guns{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.contact h3{
+    text-align: right;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.bi-caret-left{
+    color: white;
+}
+
+.bi-caret-right{
+    color: white;
+}
+
+
+@media screen and (max-width: 480px){
+    .guns{
+        font-size: 20px;
+    }
+    
+    .bi-caret-left{
+        color: gold;
+    }
+    
+    .bi-caret-right{
+        color: gold;
+    }
+
+    .navVideos{
+        transform: translateY(-15px);
+    }
+    
+    .navVideos a{
+        border: none;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------Style de "integrantes--------------------------------------------------------*/
+
+.bodyIntegrantes{
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+.antesDespues ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.antesDespues ul{
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Anton', sans-serif;
+}
+
+.antesDespues ul li a{
+    text-decoration: none;
+    border: 5px solid gold;
+    padding: 10px;
+    color: white;
+}
+
+.antesDespues a:hover{
+    background-color: gold;
+}
+
+.integrantes85Head a{
+    text-decoration: none;
+    color: white;
+}
+
+.left ul .backGold a{
+    background-color: gold;
+    font-family: 'Anton', sans-serif;
+    color: #000;
+}
+
+.left ul .backGold{
+    margin-left: 20px;
+}
+
+.left ul .backGold3{
+    margin-left: 20px;
+}
+
+.left ul .backGold2 a{
+    background-color: gold;
+    font-family: 'Anton', sans-serif;
+    color: #000;
+}
+
+.integ85-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.integ85-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.integPasado img{
+    height: 200px; width: 200px;
+    border: 1px solid gold;
+    transition: all 1s;
+}
+
+.integPasado img:hover{
+    height: 400px; width: 400px;
+    border: 1px solid gold;
+}
+
+.integPasado h2{
+    font-family: 'Abel', sans-serif;
+    font-size: 100%;
+    color: white;
+}
+
+/*-----------------------------------------------------Style de "integrantes actual--------------------------------------------------------*/
+
+.integrantesActualHead a{
+    text-decoration: none;
+    color: white;
+}
+
+.integrantesActual h2{
+    font-family: 'Abel', sans-serif;
+    font-size: 100%;
+    color: white;
+}
+
+.integActual1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.integActual2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.integrantesActual img{
+    height: 200px; width: 200px;
+    border: 1px solid gold;
+    transition: all 1s;
+}
+
+.integrantesActual img:hover{
+    height: 200px; width: 200px;
+    border: 1px solid gold;
+    height: 400px; width: 400px;
+    border: 1px solid gold;
+}
+
+/*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
+
+.bodyMedia{
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+.phvd ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.phvd ul li a{
+    text-decoration: none;
+    border: 5px solid gold;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+}
+
+.phCAmarillo a{
+    background-color: gold;
+    color: black;
+    margin-left: 20px;
+}
+
+.vdCAmarillo a{
+    color: black;
+}
+
+.vd2CAmarillo a{
+    background-color: gold;
+    color: black;
+}
+
+.ph2CAmarillo a{
+    color: black;
+    margin-left: 30px;
+}
+
+.photos h4{
+    color: white;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.photos img{
+    width: 216px; height: 236px;
+    margin: 40px;
+    border: 1px solid gold;
+    transition: all 1s;
+}
+
+.photos img:hover{
+    height: 400px; width: 400px;
+    text-align: center;
+    border: 1px solid gold;
+}
+
+/*-------------------------------------------------------------Style de "MediaVideos"-----------------------------------------------------------*/
+
+.mediaVideos img{
+    height: 600px; width: 600px;
+    border: 1px solid gold;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.mediaVideos h2{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mediaVideos h3{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.dosConcie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CarruselPropio{
+    height: 600px;
+    width: 600px;
+}
+
+.ritz{
+    transform: translateX(80px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.tokio{
+    transform: translateX(-100px);
+}
+
+.tokio h3{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio h2{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.otrosDos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.paris{
+    transform: translateX(-100px);
+}
+
+.paris img{
+    border: 1px solid gold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.paris h3{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.paris h2{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.argen{
+    transform: translateX(80px);
+}
+
+.argen img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    width: 600px;
+    transform: translateX(-230px);
+}
+
+.argen h2, h3{
+    text-align: left;
+    margin-right: 150px;
+}
+                        /*------------------------------- MediaQuerieVideos--------------------------------------*/
+
+@media screen and (max-width: 1300px){
+    
+.mediaVideos img{
+    height: 600px; width: 600px;
+    border: 1px solid gold;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.mediaVideos h2{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mediaVideos h3{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.dosConcie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CarruselPropio{
+    height: 600px;
+    width: 600px;
+}
+
+.ritz{
+    transform: translateX(80px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.tokio{
+    transform: translateX(-100px);
+}
+
+.tokio h3{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio h2{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.otrosDos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.paris{
+    transform: translateX(-100px);
+}
+
+.paris img{
+    border: 1px solid gold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.paris h3{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.paris h2{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.argen img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 30px;
+    transform: translateX(30px);
+}
+
+.argen h2{
+    text-align: left;
+    margin-right: 150px;
+}
+
+.argen h3{
+    text-align: left;
+    margin-right: 150px;
+}
+}
+                        /*------------------------------- MediaQuerieVideos Movil--------------------------------------*/
+
+@media screen and (max-width: 480px){    
+    
+.bodyVideos{
+        margin: 0;
+        padding: 0;
+    }
+
+.mediaVideos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediaVideos img{
+    height: 200px; width: 400px;
+    border: 1px solid gold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mediaVideos h2{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mediaVideos h3{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.phvd{
+    text-align: center;
+    transform: translateX(-30px);
+}
+
+.dosConcie{
+    display: flex;
+    flex-direction: column;
+}
+
+.CarruselPropio{
+    height: 200px;
+    width: 300px;
+}
+
+.ritz{
+    transform: translateX(0px);
+}
+
+.ritz img{
+    border: 1px solid gold;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.ritz h2{
+    text-align: center;
+}
+
+.ritz h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tokio{
+    transform: translateX(0px);
+}
+
+.tokio h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tokio h2{
+    text-align: center;
+    margin-right: 1px;
+}
+
+.tokio img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.otrosDos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.argen{
+    transform: translateX(20px);
+}
+
+.argen h2{
+    text-align: center;
+    transform: translateX(60px);
+}
+
+.argen h3{
+    margin-top: 10px;
+    text-align: center;
+    transform: translateX(50px);
+}
+
+.argen img{
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    margin-top: 0px;
+    margin-left: 0px;
+    transform: translateX(0px);
+}
+
+.paris{
+    transform: translateX(20px);
+}
+
+.paris img{
+    border: 1px solid gold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.paris h3{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.paris h2{
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+}
+
+/*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
+
+.gridFotos{
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 80px 100px 350px 350px 400px 350px 400px 350px 70px;
+    grid-template-areas: "header header header"
+    "navegacion navegacion navegacion"
+    "oklahoma oklahoma oklahoma"
+    "lincoln lincoln lincoln"
+    "hong hong hong"
+    "moscow moscow moscow"
+    "houston houston houston"
+    "toronto toronto toronto"
+    "footer footer footer";
+}
+
+.headerFotos{
+    grid-area: header;
+}
+
+.phvd{
+    grid-area: navegacion;
+}
+
+.oklahoma{
+    grid-area: oklahoma;
+}
+
+.imgO{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lincoln{
+    grid-area: lincoln;
+}
+
+.imgL{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hong{
+    grid-area: hong;
+}
+
+.imgH{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.moscow{
+    grid-area: moscow;
+}
+
+.imgM{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.houston{
+    grid-area: houston;
+}
+
+.imgHou{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.toronto{
+    grid-area: toronto;
+}
+
+.imgT{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footerFotos{
+    grid-area: footer;
+}
+
+/*--------------------------------------------------------Style de tour-------------------------------------------------------------------------*/
+
+
+.bodyTour{
+    background-color: rgb(54, 54, 54);
+}
+
+.navTour{
+    transform: translateX(-40px);
+}
+
+.tourH3{
+    margin-right: 30px;
+}
+
+.tour22 h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: wheat;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyTour h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyTour h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.argentina{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.argentina:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.argentina a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.argentina a:hover{
+    background-color: lightblue;
+    color: #000;
+}
+
+.argentina h2{
+    font-family: 'Anton', sans-serif;
+    color: lightblue;
+    margin-right: 10px;
+}
+
+
+.brasil{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.brasil:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.brasil a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.brasil a:hover{
+    background-color: greenyellow;
+    color: #000;
+}
+
+.brasil h2{
+    font-family: 'Anton', sans-serif;
+    color: greenyellow;
+    margin-right: 10px;
+}
+
+.uruguay{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.uruguay:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.uruguay a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.uruguay a:hover{
+    background-color: blue;
+    color: #000;
+}
+
+.uruguay h2{
+    font-family: 'Anton', sans-serif;
+    color: blue;
+    margin-right: 10px;
+}
+
+.peru{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.peru:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.peru a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.peru a:hover{
+    background-color: red;
+    color: #000;
+}
+
+.peru h2{
+    font-family: 'Anton', sans-serif;
+    color: red;
+    margin-right: 10px;
+}
+
+.colombia{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.colombia:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.colombia a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.colombia a:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+.colombia h2{
+    font-family: 'Anton', sans-serif;
+    color: yellow;
+    margin-right: 10px;
+}
+
+.mexico{
+    margin-top: 15px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mexico:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.mexico a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+.mexico a:hover{
+    background-color: rgb(6, 178, 6);;
+    color: #000;
+}
+
+.mexico h2{
+    font-family: 'Anton', sans-serif;
+    color: rgb(6, 178, 6);
+    margin-right: 10px;
+}
+
+/*-------------------------------------------------------------Media de Tour -------------------------------------------------------------------*/
+
+@media screen and (max-width: 468px){
+
+    .guns{
+        font-size: 25px;
+    }
+
+    .integHead{
+        margin-left: 50px;
+    }
+
+.tour22{
+    transform: translateY(-20px);
+    margin-bottom: 10px;
+}
+
+.argentina{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 0;
+}
+
+.brasil{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.uruguay{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.peru{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+.colombia{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.mexico{
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px;
+}
+}
+
+/*---------------------------------------------------------Style de discografia----------------------------------------------------------------*/
+
+.bodyDiscografia{
+    margin: 0px;
+    background-color: rgb(54, 54, 54);
+}
+
+.headerSecundario a{
+    text-decoration: none;
+    color: white;
+}
+
+.disco{
+    margin-right: 75px;
+}
+
+.discografia{
+    margin-top: 40px;
+    color: white;
+}
+
+.primeros4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.segundos4{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.discografia img{
+    height: 200px;
+    width: 200px;
+    transition: all 1s;
+}
+
+.discografia img:hover{
+    height: 300px; width: 300px;
+    text-align: center;
+    border: 1px solid gold;
+}
+
+.discografia h4{
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 10px;
+}
