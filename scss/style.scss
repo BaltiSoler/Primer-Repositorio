@@ -18,7 +18,11 @@
 /*------------------------------------------------------Style del index----------------------------------------------------------------------*/
 
 .bodyIndex{
+<<<<<<< HEAD
     background-color: $color-principal;
+=======
+    background-color: white;
+>>>>>>> Sass
 }
 
 .titulo{
@@ -430,6 +434,7 @@
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid white;
+<<<<<<< HEAD
         .navPrincipal{
             a{
                 text-decoration: none;
@@ -439,6 +444,8 @@
                 }
             }
         }
+=======
+>>>>>>> Sass
 }
 
 .guns{
@@ -461,10 +468,14 @@
     }
 }
 
+<<<<<<< HEAD
 .bi-caret-left{
     color: white;
 } 
 .bi-caret-right{
+=======
+.bi-caret-left & .bi-caret-right{
+>>>>>>> Sass
     color: white;
 }
 
@@ -486,6 +497,7 @@
     }
 }
 
+<<<<<<< HEAD
 
 /*-----------------------------------------------------Style de "integrantes--------------------------------------------------------*/
 
@@ -1453,3 +1465,5 @@
     }
     
 }
+=======
+>>>>>>> Sass

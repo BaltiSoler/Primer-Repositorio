@@ -236,7 +236,13 @@
 @media screen and (max-width: 480px) {
   .crearCuenta h2 {
     transform: translateX(-45px); }
+<<<<<<< HEAD
   .edad .h3Regis {
+=======
+  .edad {
+    text-align: center; }
+  .h3Regis {
+>>>>>>> Sass
     text-align: center; } }
 
 /*-----------------------------------------------Style de la subpagina "inicar sesion"----------------------------------------------------------*/
@@ -311,11 +317,14 @@
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid white; }
+<<<<<<< HEAD
   .headerSecundario .navPrincipal a {
     text-decoration: none;
     color: white; }
     .headerSecundario .navPrincipal a:hover {
       text-decoration: underline 3px gold; }
+=======
+>>>>>>> Sass
 
 .guns {
   color: white;
@@ -342,6 +351,7 @@
 @media screen and (max-width: 480px) {
   .guns {
     font-size: 20px; }
+<<<<<<< HEAD
   .bi-caret-left .bi-caret-right {
     color: gold; }
   .navVideos {
@@ -1100,3 +1110,13 @@
 .discografia h4 {
   font-family: 'Rajdhani', sans-serif;
   margin-bottom: 10px; }
+=======
+  .bi-caret-left {
+    color: gold; }
+  .bi-caret-right {
+    color: gold; }
+  .navVideos {
+    transform: translateY(-15px); }
+  .navVideos a {
+    border: none; } }
+>>>>>>> Sass
