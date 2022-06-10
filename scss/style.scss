@@ -18,11 +18,7 @@
 /*------------------------------------------------------Style del index----------------------------------------------------------------------*/
 
 .bodyIndex{
-<<<<<<< HEAD
     background-color: $color-principal;
-=======
-    background-color: white;
->>>>>>> Sass
 }
 
 .titulo{
@@ -434,7 +430,6 @@
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid white;
-<<<<<<< HEAD
         .navPrincipal{
             a{
                 text-decoration: none;
@@ -444,8 +439,6 @@
                 }
             }
         }
-=======
->>>>>>> Sass
 }
 
 .guns{
@@ -468,14 +461,10 @@
     }
 }
 
-<<<<<<< HEAD
-.bi-caret-left{
+.bi-caret-left {
     color: white;
-} 
+}
 .bi-caret-right{
-=======
-.bi-caret-left & .bi-caret-right{
->>>>>>> Sass
     color: white;
 }
 
@@ -497,12 +486,11 @@
     }
 }
 
-<<<<<<< HEAD
 
 /*-----------------------------------------------------Style de "integrantes--------------------------------------------------------*/
 
 .bodyIntegrantes{
-    background-color: rgb(54, 54, 54);
+    background-color: $color-principal;
     margin: 0;
 }
 
@@ -641,7 +629,7 @@
 /*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
 
 .bodyMedia{
-    background-color: rgb(54, 54, 54);
+    background-color: $color-principal;
     margin: 0;
 }
 
@@ -732,8 +720,7 @@
         margin-top: 10px;
         font-family: 'Rajdhani', sans-serif;
         color: white;
-    }
-    
+    }  
 }
 
 .dosConcie{
@@ -1416,7 +1403,7 @@
 
 .bodyDiscografia{
     margin: 0px;
-    background-color: rgb(54, 54, 54);
+    background-color: $color-principal;
 }
 
 .headerSecundario{
@@ -1465,5 +1452,3 @@
     }
     
 }
-=======
->>>>>>> Sass
