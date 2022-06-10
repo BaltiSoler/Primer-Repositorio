@@ -311,6 +311,11 @@
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid white; }
+  .headerSecundario .navPrincipal a {
+    text-decoration: none;
+    color: white; }
+    .headerSecundario .navPrincipal a:hover {
+      text-decoration: underline 3px gold; }
 
 .guns {
   color: white;
@@ -343,3 +348,755 @@
     transform: translateY(-15px); }
     .navVideos a {
       border: none; } }
+
+/*-----------------------------------------------------Style de "integrantes--------------------------------------------------------*/
+.bodyIntegrantes {
+  background-color: #363636;
+  margin: 0; }
+
+.antesDespues ul {
+  text-align: center;
+  margin-right: 10px;
+  font-family: 'Anton', sans-serif; }
+  .antesDespues ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 30px; }
+    .antesDespues ul li a {
+      text-decoration: none;
+      border: 5px solid gold;
+      padding: 10px;
+      color: white; }
+      .antesDespues ul li a:hover {
+        background-color: gold; }
+
+.integrantes85Head a {
+  text-decoration: none;
+  color: white; }
+
+.left ul .backGold {
+  margin-left: 20px; }
+  .left ul .backGold a {
+    background-color: gold;
+    font-family: 'Anton', sans-serif;
+    color: #000; }
+
+.left ul .backGold2 a {
+  background-color: gold;
+  font-family: 'Anton', sans-serif;
+  color: #000; }
+
+.left ul .backGold3 {
+  margin-left: 20px; }
+
+.integ85-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.integ85-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px; }
+
+.integPasado img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid gold;
+  transition: all 1s; }
+  .integPasado img:hover {
+    height: 400px;
+    width: 400px;
+    border: 1px solid gold; }
+
+.integPasado h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 100%;
+  color: white; }
+
+/*-----------------------------------------------------Style de "integrantes actual--------------------------------------------------------*/
+.integrantesActualHead a {
+  text-decoration: none;
+  color: white; }
+
+.integrantesActual h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 100%;
+  color: white; }
+
+.integrantesActual img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid gold;
+  transition: all 1s; }
+  .integrantesActual img:hover {
+    height: 200px;
+    width: 200px;
+    border: 1px solid gold;
+    height: 400px;
+    width: 400px;
+    border: 1px solid gold; }
+
+.integActual1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.integActual2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px; }
+
+/*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
+.bodyMedia {
+  background-color: #363636;
+  margin: 0; }
+
+.phvd ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 35px;
+  margin-bottom: 30px; }
+  .phvd ul li a {
+    text-decoration: none;
+    border: 5px solid gold;
+    padding: 10px;
+    font-family: 'Anton', sans-serif; }
+
+.phCAmarillo a {
+  background-color: gold;
+  color: black;
+  margin-left: 20px; }
+
+.ph2CAmarillo a {
+  color: black;
+  margin-left: 30px; }
+
+.vdCAmarillo a {
+  color: black; }
+
+.vd2CAmarillo a {
+  background-color: gold;
+  color: black; }
+
+.photos h4 {
+  color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-family: 'Rajdhani', sans-serif; }
+
+.photos img {
+  width: 216px;
+  height: 236px;
+  margin: 40px;
+  border: 1px solid gold;
+  transition: all 1s; }
+  .photos img:hover {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid gold; }
+
+/*-------------------------------------------------------------Style de "MediaVideos"-----------------------------------------------------------*/
+.mediaVideos img {
+  height: 600px;
+  width: 600px;
+  border: 1px solid gold;
+  margin-left: 250px;
+  margin-top: 30px; }
+
+.mediaVideos h2 {
+  margin-left: 70px;
+  margin-top: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  color: white; }
+
+.mediaVideos h3 {
+  margin-left: 100px;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  color: white; }
+
+.dosConcie {
+  display: flex;
+  justify-content: space-between; }
+
+.CarruselPropio {
+  height: 600px;
+  width: 600px; }
+
+.ritz {
+  transform: translateX(80px); }
+  .ritz img {
+    border: 1px solid gold;
+    margin-top: 20px;
+    margin-left: 30px; }
+
+.tokio {
+  transform: translateX(-100px); }
+  .tokio h2, .tokio h3 {
+    text-align: right;
+    margin-right: 150px; }
+  .tokio img {
+    border-top: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-left: none;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+.otrosDos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; }
+
+.paris {
+  transform: translateX(-100px); }
+  .paris h2, .paris h3 {
+    text-align: right;
+    margin-right: 40px; }
+  .paris img {
+    border: 1px solid gold;
+    margin-left: 30px;
+    margin-top: 20px; }
+
+.argen {
+  transform: translateX(80px); }
+  .argen img {
+    border: 1px solid gold;
+    margin-top: 20px;
+    width: 600px;
+    transform: translateX(-230px); }
+  .argen h2, .argen h3 {
+    text-align: left;
+    margin-right: 150px; }
+
+/*------------------------------- MediaQuerieVideos Movil--------------------------------------*/
+@media screen and (max-width: 480px) {
+  .bodyVideos {
+    margin: 0;
+    padding: 0; }
+  .mediaVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mediaVideos img {
+      height: 200px;
+      width: 400px;
+      border: 1px solid gold;
+      margin-left: 10px;
+      margin-top: 10px; }
+    .mediaVideos h2 {
+      margin-left: 10px;
+      margin-top: 10px;
+      font-family: 'Rajdhani', sans-serif;
+      color: white; }
+    .mediaVideos h3 {
+      margin-left: 10px;
+      margin-top: 10px;
+      font-family: 'Rajdhani', sans-serif;
+      color: white; }
+  .phvd {
+    text-align: center;
+    transform: translateX(-30px); }
+  .dosConcie {
+    display: flex;
+    flex-direction: column; }
+  .CarruselPropio {
+    height: 200px;
+    width: 300px; }
+  .ritz {
+    transform: translateX(0px); }
+    .ritz img {
+      border: 1px solid gold;
+      margin-top: 1px;
+      margin-left: 10px; }
+    .ritz h2 {
+      text-align: center; }
+    .ritz h3 {
+      text-align: center;
+      margin-right: 10px; }
+  .tokio {
+    transform: translateX(0px); }
+    .tokio h2 {
+      text-align: center;
+      margin-right: 1px; }
+    .tokio h3 {
+      text-align: center;
+      margin-right: 10px; }
+    .tokio img {
+      border-top: 1px solid gold;
+      border-right: 1px solid gold;
+      border-bottom: 1px solid gold;
+      border-left: none;
+      margin-top: 10px;
+      margin-left: 10px; }
+  .otrosDos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; }
+  .argen {
+    transform: translateX(20px); }
+    .argen h2 {
+      text-align: center;
+      transform: translateX(60px); }
+    .argen h3 {
+      margin-top: 10px;
+      text-align: center;
+      transform: translateX(50px); }
+    .argen img {
+      border-top: 1px solid gold;
+      border-right: 1px solid gold;
+      border-bottom: 1px solid gold;
+      margin-top: 0px;
+      margin-left: 0px;
+      transform: translateX(0px); }
+  .paris {
+    transform: translateX(20px); }
+    .paris img {
+      border: 1px solid gold;
+      margin-left: 10px;
+      margin-top: 10px; }
+    .paris h3 {
+      text-align: center;
+      margin-right: 10px; }
+    .paris h2 {
+      text-align: center;
+      margin-right: 10px;
+      margin-top: 30px; } }
+
+/*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
+.gridFotos {
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 80px 100px 350px 350px 400px 350px 400px 350px 70px;
+  grid-template-areas: "header header header" "navegacion navegacion navegacion" "oklahoma oklahoma oklahoma" "lincoln lincoln lincoln" "hong hong hong" "moscow moscow moscow" "houston houston houston" "toronto toronto toronto" "footer footer footer"; }
+
+.headerFotos {
+  grid-area: header; }
+
+.phvd {
+  grid-area: navegacion; }
+
+.oklahoma {
+  grid-area: oklahoma; }
+
+.imgO {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.lincoln {
+  grid-area: lincoln; }
+
+.imgL {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.hong {
+  grid-area: hong; }
+
+.imgH {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.moscow {
+  grid-area: moscow; }
+
+.imgM {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.houston {
+  grid-area: houston; }
+
+.imgHou {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.toronto {
+  grid-area: toronto; }
+
+.imgT {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.footerFotos {
+  grid-area: footer; }
+
+/*--------------------------------------------------------Style de tour-------------------------------------------------------------------------*/
+.bodyTour {
+  background-color: #363636; }
+  .bodyTour h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .bodyTour h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.navTour {
+  transform: translateX(-40px); }
+
+.tourH3 {
+  margin-right: 30px; }
+
+.tour22 h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: wheat;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center; }
+
+.pais {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.argentina {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .argentina:hover {
+    background-color: #413f3f; }
+  .argentina a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .argentina a:hover {
+      background-color: lightblue;
+      color: #000; }
+  .argentina h2 {
+    font-family: 'Anton', sans-serif;
+    color: lightblue;
+    margin-right: 10px; }
+
+.brasil {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .brasil:hover {
+    background-color: #413f3f; }
+  .brasil a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .brasil a:hover {
+      background-color: greenyellow;
+      color: #000; }
+  .brasil h2 {
+    font-family: 'Anton', sans-serif;
+    color: greenyellow;
+    margin-right: 10px; }
+
+.uruguay {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .uruguay:hover {
+    background-color: #413f3f; }
+  .uruguay a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .uruguay a:hover {
+      background-color: blue;
+      color: #000; }
+  .uruguay h2 {
+    font-family: 'Anton', sans-serif;
+    color: blue;
+    margin-right: 10px; }
+
+.peru {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .peru:hover {
+    background-color: #413f3f; }
+  .peru a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .peru a:hover {
+      background-color: red;
+      color: #000; }
+  .peru h2 {
+    font-family: 'Anton', sans-serif;
+    color: red;
+    margin-right: 10px; }
+
+.colombia {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .colombia:hover {
+    background-color: #413f3f; }
+  .colombia a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .colombia a:hover {
+      background-color: yellow;
+      color: #000; }
+  .colombia h2 {
+    font-family: 'Anton', sans-serif;
+    color: yellow;
+    margin-right: 10px; }
+
+.mexico {
+  margin-top: 15px;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .mexico:hover {
+    background-color: #413f3f; }
+  .mexico a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    border: 2px solid gold;
+    padding: 10px; }
+    .mexico a:hover {
+      background-color: #06b206;
+      color: #000; }
+  .mexico h2 {
+    font-family: 'Anton', sans-serif;
+    color: #06b206;
+    margin-right: 10px; }
+
+/*-------------------------------------------------------------Media de Tour -------------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  .guns {
+    font-size: 25px; }
+  .tourH3 {
+    transform: translateX(35px); }
+  .headTour .navTour {
+    text-align: center;
+    transform: translateX(0px) translateY(-10px); }
+    .headTour .navTour a {
+      border: #000; }
+  .bi-caret-left .bi-caret-right {
+    color: gold; }
+  .tour22 {
+    transform: translateY(-20px);
+    margin-bottom: 10px; }
+  .argentina {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 0; }
+  .brasil {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px; }
+  .uruguay {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px; }
+  .peru {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px; }
+  .colombia {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px; }
+  .mexico {
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    margin-top: 10px; } }
+
+/*---------------------------------------------------------Style de discografia----------------------------------------------------------------*/
+.bodyDiscografia {
+  margin: 0px;
+  background-color: #363636; }
+
+.headerSecundario a {
+  text-decoration: none;
+  color: white; }
+
+.disco {
+  margin-right: 75px; }
+
+.discografia {
+  margin-top: 40px;
+  color: white; }
+
+.primeros4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.segundos4 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.discografia img {
+  height: 200px;
+  width: 200px;
+  transition: all 1s; }
+  .discografia img:hover {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid gold; }
+
+.discografia h4 {
+  font-family: 'Rajdhani', sans-serif;
+  margin-bottom: 10px; }
