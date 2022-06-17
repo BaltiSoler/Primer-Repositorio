@@ -173,7 +173,6 @@
 }
 
 /*----------------------------------------------------------- MediaQuerie Index ----------------------------------------------------------------*/
-
 @media screen and (max-width: 480px) {
     
     *{
@@ -183,11 +182,10 @@
     
     .headerPrincipal{
         width: 100%;
-    }
-    
-    .headerUno{
-        display: flex;
-        flex-direction: row;
+        .headerUno{
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     .navPrincipal{
@@ -473,10 +471,6 @@
     .guns{
         font-size: 20px;
     }
-    
-    .bi-caret-left & .bi-caret-right{
-        color: gold;
-    }
 
     .navVideos{
         transform: translateY(-15px);
@@ -559,6 +553,56 @@
     }
 }
 
+/*---------------------MediaQuerie-----------------------*/
+
+@media screen and (max-width: 480px){
+    .nav85{
+        transform: translateY(-10px);
+        a{
+        border: black;
+        }
+    }
+
+    .antesDespues{
+        ul{
+            transform: translateY(-20px);
+        }
+    }
+
+    .integ85-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .axel85{
+            margin-bottom: 15px;
+        }
+        .slash85, .duff85{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .integ85-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .izzy85, .steven85{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .gilby85{
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+    }
+    .footInt{
+        height: 50px;
+    }
+}
+
+
 /*-----------------------------------------------------Style de "integrantes actual--------------------------------------------------------*/
 
 .integrantesActualHead{
@@ -600,6 +644,43 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+/*---------------------MediaQuerie-----------------------*/
+
+@media screen and (max-width: 480px){
+    
+    .navActual{
+            transform: translateY(-10px);
+            a{
+            border: black;
+            }
+        }
+    
+    .integActual1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        div{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        #axl{
+            margin-top: 0;
+        }
+    }
+    
+    .integActual2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        div{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
 }
 
 /*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
@@ -800,7 +881,7 @@
         }
 }
 .phvd{
-     text-align: center;
+    text-align: center;
     transform: translateX(-30px);
 }
     
@@ -1369,3 +1450,64 @@
     }
     
 }
+
+@media screen and (max-width: 480px){
+    .bi-caret-right, .bi-caret-left{
+        color: gold
+    }
+    .navDisco{
+            text-align: center;
+            transform: translateX(0px) translateY(-10px); 
+            a{
+                border: #000;
+            }
+        }
+    .discografia{
+        .primeros4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .segundos4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        img{
+            @include sizes(300px,300px);
+        }
+        .apetitte{
+            margin-top: 3px;
+            margin-bottom: 30px;
+        }
+        .lies{
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .use1{
+            @extend .lies;
+        }
+        
+        .use2{
+            @extend .lies;
+        }
+
+        .spaguetti{
+            @extend .lies;
+        }
+        .live{
+            @extend .lies;
+        }
+        .greatest{
+            @extend .lies;
+        }
+        .Chinese{
+            margin-bottom: 0px;
+        }
+    }
+    .footerDisco{
+        height: 25px;
+    }
+}
+    

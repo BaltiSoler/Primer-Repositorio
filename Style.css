@@ -130,9 +130,9 @@
     padding: 0; }
   .headerPrincipal {
     width: 100%; }
-  .headerUno {
-    display: flex;
-    flex-direction: row; }
+    .headerPrincipal .headerUno {
+      display: flex;
+      flex-direction: row; }
   .navPrincipal {
     margin-top: 30px; }
   .titulo {
@@ -342,8 +342,6 @@
 @media screen and (max-width: 480px) {
   .guns {
     font-size: 20px; }
-  .bi-caret-left .bi-caret-right {
-    color: gold; }
   .navVideos {
     transform: translateY(-15px); }
     .navVideos a {
@@ -406,6 +404,38 @@
   font-size: 100%;
   color: white; }
 
+/*---------------------MediaQuerie-----------------------*/
+@media screen and (max-width: 480px) {
+  .nav85 {
+    transform: translateY(-10px); }
+    .nav85 a {
+      border: black; }
+  .antesDespues ul {
+    transform: translateY(-20px); }
+  .integ85-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .integ85-1 .axel85 {
+      margin-bottom: 15px; }
+    .integ85-1 .slash85, .integ85-1 .duff85 {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+  .integ85-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .integ85-2 .izzy85, .integ85-2 .steven85 {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .integ85-2 .gilby85 {
+      margin-top: 15px;
+      margin-bottom: 0; }
+  .footInt {
+    height: 50px; } }
+
 /*-----------------------------------------------------Style de "integrantes actual--------------------------------------------------------*/
 .integrantesActualHead a {
   text-decoration: none;
@@ -440,6 +470,31 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 20px; }
+
+/*---------------------MediaQuerie-----------------------*/
+@media screen and (max-width: 480px) {
+  .navActual {
+    transform: translateY(-10px); }
+    .navActual a {
+      border: black; }
+  .integActual1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .integActual1 div {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .integActual1 #axl {
+      margin-top: 0; }
+  .integActual2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .integActual2 div {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
 
 /*-------------------------------------------------------------Style de "Media"-----------------------------------------------------------------*/
 .bodyMedia {
@@ -1016,3 +1071,33 @@
 .discografia h4 {
   font-family: 'Rajdhani', sans-serif;
   margin-bottom: 10px; }
+
+@media screen and (max-width: 480px) {
+  .bi-caret-right, .bi-caret-left {
+    color: gold; }
+  .navDisco {
+    text-align: center;
+    transform: translateX(0px) translateY(-10px); }
+    .navDisco a {
+      border: #000; }
+  .discografia .primeros4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .discografia .segundos4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .discografia img {
+    height: 300px;
+    width: 300px; }
+  .discografia .apetitte {
+    margin-top: 3px;
+    margin-bottom: 30px; }
+  .discografia .lies, .discografia .use1, .discografia .use2, .discografia .spaguetti, .discografia .live, .discografia .greatest {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .discografia .Chinese {
+    margin-bottom: 0px; }
+  .footerDisco {
+    height: 25px; } }
