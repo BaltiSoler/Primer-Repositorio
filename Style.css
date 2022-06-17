@@ -356,8 +356,7 @@
 
 .antesDespues ul {
   text-align: center;
-  margin-right: 10px;
-  font-family: 'Anton', sans-serif; }
+  margin-right: 10px; }
   .antesDespues ul li {
     list-style-type: none;
     display: inline-block;
@@ -365,30 +364,17 @@
     margin-bottom: 30px; }
     .antesDespues ul li a {
       text-decoration: none;
-      border: 5px solid gold;
+      border: 1px solid gold;
       padding: 10px;
-      color: white; }
+      color: white;
+      font-family: 'Rajdhani', sans-serif; }
       .antesDespues ul li a:hover {
-        background-color: gold; }
+        background-color: gold;
+        color: #000; }
 
 .integrantes85Head a {
   text-decoration: none;
   color: white; }
-
-.left ul .backGold {
-  margin-left: 20px; }
-  .left ul .backGold a {
-    background-color: gold;
-    font-family: 'Anton', sans-serif;
-    color: #000; }
-
-.left ul .backGold2 a {
-  background-color: gold;
-  font-family: 'Anton', sans-serif;
-  color: #000; }
-
-.left ul .backGold3 {
-  margin-left: 20px; }
 
 .integ85-1 {
   display: flex;
@@ -499,8 +485,8 @@
   font-family: 'Rajdhani', sans-serif; }
 
 .photos img {
-  width: 216px;
   height: 236px;
+  width: 216px;
   margin: 40px;
   border: 1px solid gold;
   transition: all 1s; }
@@ -782,8 +768,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -813,8 +799,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -844,8 +830,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -875,8 +861,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -906,8 +892,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -937,8 +923,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
   align-items: center;
   padding: 30px;
   padding-left: 10px;
@@ -975,7 +961,7 @@
   .tour22 {
     transform: translateY(-20px);
     margin-bottom: 10px; }
-  .argentina {
+  .tourArg, .brasil, .uruguay, .peru, .colombia, .mexico {
     margin: 10px;
     color: white;
     display: flex;
@@ -988,77 +974,7 @@
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
-    margin-top: 0; }
-  .brasil {
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px; }
-  .uruguay {
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px; }
-  .peru {
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px; }
-  .colombia {
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px; }
-  .mexico {
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px; } }
+    margin-top: 0; } }
 
 /*---------------------------------------------------------Style de discografia----------------------------------------------------------------*/
 .bodyDiscografia {

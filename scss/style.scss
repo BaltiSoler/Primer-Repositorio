@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import "variables";
-
+@import "mixin";
 
 
 *{
@@ -72,8 +72,8 @@
     text-align: center;
         a{
             padding: 10px;
-            border-left: 3px solid gold;
-            border-right: 3px solid gold;
+            border-left: 3px solid map-get($colores-border,prin);
+            border-right: 3px solid map-get($colores-border,prin);
             border-collapse: collapse;
             font-family: 'Abel', sans-serif;
         }
@@ -90,7 +90,7 @@
     text-align: center;
     margin-top: 70px;
     iframe{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
     }
 }
 
@@ -99,14 +99,14 @@
     flex-direction: row;
         .videoPage2-1{
             iframe{
-                border: 1px solid gold;
+                border: 1px solid map-get($colores-border,prin);
                 margin-top: 70px;
                 margin-left: 200px;
             }
         }
         .videoPage3{
             iframe{
-                border: 1px solid gold;
+                border: 1px solid map-get($colores-border,prin);
                 margin-top: 170px;
                 margin-left: 90px;
             }
@@ -498,7 +498,6 @@
     ul{
         text-align: center;
         margin-right: 10px;
-        font-family: 'Anton', sans-serif;
         li{
             list-style-type: none;
             display: inline-block;
@@ -506,11 +505,13 @@
             margin-bottom: 30px;
             a{
                 text-decoration: none;
-                border: 5px solid gold;
+                border: 1px solid gold;
                 padding: 10px;
                 color: white;
+                font-family: 'Rajdhani', sans-serif;
                 &:hover{
                     background-color: gold;
+                    color: #000;
                 }
             }
         }
@@ -521,29 +522,6 @@
     a{
         text-decoration: none;
         color: white;
-    }
-}
-
-.left{
-    ul{
-        .backGold{
-            margin-left: 20px;
-            a{
-                background-color: gold;
-                font-family: 'Anton', sans-serif;
-                color: #000;
-            }
-        }
-        .backGold2{
-            a{
-                background-color: gold;
-                font-family: 'Anton', sans-serif;
-                color: #000;
-            }
-        }
-        .backGold3{
-            margin-left: 20px;
-        }
     }
 }
 
@@ -566,7 +544,7 @@
 
 .integPasado{
     img{
-        height: 200px; width: 200px;
+        @include sizes(200px,200px);
         border: 1px solid gold;
         transition: all 1s;
         &:hover{
@@ -597,7 +575,7 @@
         color: white;
     }
     img{
-        height: 200px; width: 200px;
+        @include sizes(200px,200px);
         border: 1px solid gold;
         transition: all 1s;
         &:hover{
@@ -688,7 +666,7 @@
         font-family: 'Rajdhani', sans-serif;
     }
     img{
-        width: 216px; height: 236px;
+        @include sizes(236px,216px);
         margin: 40px;
         border: 1px solid gold;
         transition: all 1s;
@@ -704,7 +682,7 @@
 
 .mediaVideos{
     img{
-        height: 600px; width: 600px;
+        @include sizes(600px,600px);
         border: 1px solid gold;
         margin-left: 250px;
         margin-top: 30px;
@@ -1060,14 +1038,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid map-get($colores-border,tour);
+    border-bottom: 1px solid map-get($colores-border,tour);
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
     &:hover{
-        background-color: rgb(65, 63, 63);
+        background-color: $color-barraTour;
     }
     a{
         text-decoration: none;
@@ -1097,14 +1075,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid  map-get($colores-border,tour);;
+    border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
     &:hover{
-        background-color: rgb(65, 63, 63);
+        background-color: $color-barraTour;
     }
     a{
         text-decoration: none;
@@ -1133,14 +1111,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid map-get($colores-border,tour);;
+    border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
         &:hover{
-            background-color: rgb(65, 63, 63);
+            background-color: $color-barraTour;
         }
         a{
             text-decoration: none;
@@ -1169,14 +1147,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid  map-get($colores-border,tour);;
+    border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
         &:hover{
-            background-color: rgb(65, 63, 63);
+            background-color: $color-barraTour;
         }
         a{
             text-decoration: none;
@@ -1205,14 +1183,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid  map-get($colores-border,tour);;
+    border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
         &:hover{
-            background-color: rgb(65, 63, 63);
+            background-color: $color-barraTour;
         }
         a{
             text-decoration: none;
@@ -1242,14 +1220,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid  map-get($colores-border,tour);;
+    border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
     padding: 30px;
     padding-left: 10px;
     padding-right: 10px;
         &:hover{
-            background-color: rgb(65, 63, 63);
+            background-color: $color-barraTour;
         }
         a{
             text-decoration: none;
@@ -1301,7 +1279,7 @@
     margin-bottom: 10px;
 }
 
-.argentina{
+.tourArg{
     margin: 10px;
     color: white;
     display: flex;
@@ -1318,84 +1296,24 @@
 }
 
 .brasil{
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px;
+    @extend .tourArg;
 }
 
 .uruguay{
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px;
+    @extend .tourArg;
 }
 
 .peru{
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px;
+    @extend .tourArg;
 }
 
 
 .colombia{
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px;
+    @extend .tourArg;
 }
 
 .mexico{
-    margin: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    align-items: center;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    margin-top: 10px;
+    @extend .tourArg;
 }
 }
 
