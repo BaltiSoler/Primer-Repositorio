@@ -120,7 +120,7 @@
     align-items: center;
         nav{
             img{
-                height: 20px; width: 20px;
+                @include sizes(20px,20px);
                 margin-left: 2px; margin-right: 2px;
                 margin-top: 50px;
             }
@@ -261,7 +261,7 @@
     margin-left: 46%;
     h2{
         font-family: 'Bebas Neue', cursive;
-        border: 2px solid gold;
+        border: 2px solid map-get($colores-border,prin);
         display: block;
         margin-top: 15px;
         margin-bottom: 10px;
@@ -435,7 +435,7 @@
                 text-decoration: none;
                 color: white;
                 &:hover{
-                    text-decoration: underline 3px gold;
+                    text-decoration: underline 3px map-get($colores-border,prin);
                 }
             }
         }
@@ -505,7 +505,7 @@
             margin-bottom: 30px;
             a{
                 text-decoration: none;
-                border: 1px solid gold;
+                border: 1px solid map-get($colores-border,prin);
                 padding: 10px;
                 color: white;
                 font-family: 'Rajdhani', sans-serif;
@@ -545,11 +545,11 @@
 .integPasado{
     img{
         @include sizes(200px,200px);
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         transition: all 1s;
         &:hover{
             height: 400px; width: 400px;
-            border: 1px solid gold;
+            border: 1px solid map-get($colores-border,prin);
         }
     }
     h2{
@@ -576,13 +576,11 @@
     }
     img{
         @include sizes(200px,200px);
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         transition: all 1s;
         &:hover{
-            height: 200px; width: 200px;
-            border: 1px solid gold;
-            height: 400px; width: 400px;
-            border: 1px solid gold;
+            @include sizes(300px,300px);
+            border: 1px solid map-get($colores-border,prin);
         }
     }
 }
@@ -622,7 +620,7 @@
             margin-bottom: 30px;
             a{
                 text-decoration: none;
-                border: 5px solid gold;
+                border: 5px solid map-get($colores-border,prin);
                 padding: 10px;
                 font-family: 'Anton', sans-serif;
             }
@@ -671,9 +669,9 @@
         border: 1px solid gold;
         transition: all 1s;
         &:hover{
-            height: 400px; width: 400px;
+            @include sizes(400px,400px);
             text-align: center;
-            border: 1px solid gold;
+            border: 1px solid map-get($colores-border,prin);
         }
     }
 }
@@ -683,7 +681,7 @@
 .mediaVideos{
     img{
         @include sizes(600px,600px);
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-left: 250px;
         margin-top: 30px;
     }
@@ -707,14 +705,13 @@
 }
 
 .CarruselPropio{
-    height: 600px;
-    width: 600px;
+    @include sizes(600px,600px);
 }
 
 .ritz{
     transform: translateX(80px);
     img{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-top: 20px;
         margin-left: 30px;
     }
@@ -727,9 +724,9 @@
         margin-right: 150px;
     }
     img{
-        border-top: 1px solid gold;
-        border-right: 1px solid gold;
-        border-bottom: 1px solid gold;
+        border-top: 1px solid map-get($colores-border,prin);
+        border-right: 1px solid map-get($colores-border,prin);
+        border-bottom: 1px solid map-get($colores-border,prin);
         border-left: none;
         margin-top: 20px;
         margin-left: 0px;
@@ -750,7 +747,7 @@
         margin-right: 40px;
     }
     img{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-left: 30px;
         margin-top: 20px;
     }
@@ -759,7 +756,7 @@
 .argen{
     transform: translateX(80px);
     img{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-top: 20px;
         width: 600px;
         transform: translateX(-230px);
@@ -784,8 +781,8 @@
     flex-direction: column;
     align-items: center;
         img{
-            height: 200px; width: 400px;
-            border: 1px solid gold;
+            @include sizes(200px,400px);
+            border: 1px solid map-get($colores-border,prin);
             margin-left: 10px;
             margin-top: 10px;
         }
@@ -813,14 +810,13 @@
 }
     
 .CarruselPropio{
-    height: 200px;
-    width: 300px;
+   @include sizes(200px,300px);
 }
     
 .ritz{
     transform: translateX(0px);
     img{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-top: 1px;
         margin-left: 10px;
     }
@@ -844,9 +840,9 @@
         margin-right: 10px;
     }
     img{
-        border-top: 1px solid gold;
-        border-right: 1px solid gold;
-        border-bottom: 1px solid gold;
+        border-top: 1px solid map-get($colores-border,prin);
+        border-right: 1px solid map-get($colores-border,prin);
+        border-bottom: 1px solid map-get($colores-border,prin);
         border-left: none;
         margin-top: 10px;
         margin-left: 10px;
@@ -871,9 +867,9 @@
         transform: translateX(50px);
     }
     img{
-        border-top: 1px solid gold;
-        border-right: 1px solid gold;
-        border-bottom: 1px solid gold;
+        border-top: 1px solid map-get($colores-border,prin);
+        border-right: 1px solid map-get($colores-border,prin);
+        border-bottom: 1px solid map-get($colores-border,prin);
         margin-top: 0px;
         margin-left: 0px;
         transform: translateX(0px);
@@ -883,7 +879,7 @@
 .paris{
     transform: translateX(20px);
     img{
-        border: 1px solid gold;
+        border: 1px solid map-get($colores-border,prin);
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -1032,12 +1028,12 @@
 .argentina{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid map-get($colores-border,tour);
     border-bottom: 1px solid map-get($colores-border,tour);
     align-items: center;
@@ -1051,7 +1047,7 @@
         text-decoration: none;
         color: white;
         font-family: 'Dancing Script', cursive;
-        border: 2px solid gold;
+        border: 2px solid  map-get($colores-border,prin);
         padding: 10px;
         &:hover{
             background-color: lightblue;
@@ -1069,12 +1065,12 @@
 .brasil{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid  map-get($colores-border,tour);;
     border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
@@ -1088,7 +1084,7 @@
         text-decoration: none;
         color: white;
         font-family: 'Dancing Script', cursive;
-        border: 2px solid gold;
+        border: 2px solid map-get($colores-border,prin);
         padding: 10px;
         &:hover{
             background-color: greenyellow;
@@ -1105,12 +1101,12 @@
 .uruguay{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid map-get($colores-border,tour);;
     border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
@@ -1124,7 +1120,7 @@
             text-decoration: none;
             color: white;
             font-family: 'Dancing Script', cursive;
-            border: 2px solid gold;
+            border: 2px solid map-get($colores-border,prin);
             padding: 10px;
             &:hover{
                 background-color: blue;
@@ -1141,12 +1137,12 @@
 .peru{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid  map-get($colores-border,tour);;
     border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
@@ -1160,7 +1156,7 @@
             text-decoration: none;
             color: white;
             font-family: 'Dancing Script', cursive;
-            border: 2px solid gold;
+            border: 2px solid map-get($colores-border,prin);
             padding: 10px;
             &:hover{
                 background-color: red;
@@ -1177,12 +1173,12 @@
 .colombia{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid  map-get($colores-border,tour);;
     border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
@@ -1196,7 +1192,7 @@
             text-decoration: none;
             color: white;
             font-family: 'Dancing Script', cursive;
-            border: 2px solid gold;
+            border: 2px solid map-get($colores-border,prin);
             padding: 10px;
             &:hover{
                 background-color: yellow;
@@ -1214,12 +1210,12 @@
 .mexico{
     margin-top: 15px;
     margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid  map-get($colores-border,tour);;
     border-bottom: 1px solid  map-get($colores-border,tour);;
     align-items: center;
@@ -1233,7 +1229,7 @@
             text-decoration: none;
             color: white;
             font-family: 'Dancing Script', cursive;
-            border: 2px solid gold;
+            border: 2px solid map-get($colores-border,prin);
             padding: 10px;
             &:hover{
                 background-color: rgb(6, 178, 6);;
@@ -1331,6 +1327,10 @@
     }
 }
 
+.navDisco{
+    transform: translateX(-40px);
+}
+
 .disco{
     margin-right: 75px;
 }
@@ -1355,13 +1355,12 @@
 
 .discografia{
     img{
-        height: 200px;
-        width: 200px;
+        @include sizes(200px,200px);
         transition: all 1s;
         &:hover{
-            height: 300px; width: 300px;
+            @include sizes(300px,300px);
             text-align: center;
-            border: 1px solid gold;
+            border: 1px solid map-get($colores-border,prin);
         }
     }
     h4{

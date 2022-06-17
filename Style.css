@@ -422,11 +422,8 @@
   border: 1px solid gold;
   transition: all 1s; }
   .integrantesActual img:hover {
-    height: 200px;
-    width: 200px;
-    border: 1px solid gold;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border: 1px solid gold; }
 
 .integActual1 {
@@ -762,12 +759,12 @@
 .argentina {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -793,12 +790,12 @@
 .brasil {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -824,12 +821,12 @@
 .uruguay {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -855,12 +852,12 @@
 .peru {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -886,12 +883,12 @@
 .colombia {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -917,12 +914,12 @@
 .mexico {
   margin-top: 15px;
   margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid wheat;
   border-bottom: 1px solid wheat;
   align-items: center;
@@ -984,6 +981,9 @@
 .headerSecundario a {
   text-decoration: none;
   color: white; }
+
+.navDisco {
+  transform: translateX(-40px); }
 
 .disco {
   margin-right: 75px; }
