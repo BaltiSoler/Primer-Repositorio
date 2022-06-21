@@ -757,6 +757,156 @@
     }
 }
 
+
+/*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
+
+.gridFotos{
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 80px 100px 350px 350px 400px 350px 400px 350px 70px;
+    grid-template-areas: "header header header"
+    "navegacion navegacion navegacion"
+    "oklahoma oklahoma oklahoma"
+    "lincoln lincoln lincoln"
+    "hong hong hong"
+    "moscow moscow moscow"
+    "houston houston houston"
+    "toronto toronto toronto"
+    "footer footer footer";
+}
+
+.headerFotos{
+    grid-area: header;
+}
+
+.phvd{
+    grid-area: navegacion;
+}
+
+.oklahoma{
+    grid-area: oklahoma;
+}
+
+.imgO{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lincoln{
+    grid-area: lincoln;
+}
+
+.imgL{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hong{
+    grid-area: hong;
+}
+
+.imgH{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.moscow{
+    grid-area: moscow;
+}
+
+.imgM{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.houston{
+    grid-area: houston;
+}
+
+.imgHou{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.toronto{
+    grid-area: toronto;
+}
+
+.imgT{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footerFotos{
+    grid-area: footer;
+}
+
+/*------------------------------- MediaQuerieFotos Movil--------------------------------------*/
+
+@media screen and (max-width: 480px){
+    .gridFotos{
+        display: flex;
+        flex-direction: column;
+        .phvdMedia{
+            transform: translateX(-5px);
+        }
+        h4{
+            transform: translateX(-20px);
+        }
+        .navFotos{
+            transform: translateY(-10px);
+            a{
+            border: black;
+            }
+        }
+        .oklahoma, .imgO{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .lincoln, .imgL{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .hong, .imgH{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .moscow, .imgM{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .houston, .imgHou{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .toronto, .imgT{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+    
+    
+
 /*-------------------------------------------------------------Style de "MediaVideos"-----------------------------------------------------------*/
 
 .mediaVideos{
@@ -974,95 +1124,6 @@
         margin-top: 30px;
     }
 }
-}
-
-/*----------------------------------------------- GRID Fotos------------------------------------------------------------------------------------*/
-
-.gridFotos{
-    display: grid;
-    grid-template-columns: 25% auto 25%;
-    grid-template-rows: 80px 100px 350px 350px 400px 350px 400px 350px 70px;
-    grid-template-areas: "header header header"
-    "navegacion navegacion navegacion"
-    "oklahoma oklahoma oklahoma"
-    "lincoln lincoln lincoln"
-    "hong hong hong"
-    "moscow moscow moscow"
-    "houston houston houston"
-    "toronto toronto toronto"
-    "footer footer footer";
-}
-
-.headerFotos{
-    grid-area: header;
-}
-
-.phvd{
-    grid-area: navegacion;
-}
-
-.oklahoma{
-    grid-area: oklahoma;
-}
-
-.imgO{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.lincoln{
-    grid-area: lincoln;
-}
-
-.imgL{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.hong{
-    grid-area: hong;
-}
-
-.imgH{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.moscow{
-    grid-area: moscow;
-}
-
-.imgM{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.houston{
-    grid-area: houston;
-}
-
-.imgHou{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.toronto{
-    grid-area: toronto;
-}
-
-.imgT{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.footerFotos{
-    grid-area: footer;
 }
 
 /*--------------------------------------------------------Style de tour-------------------------------------------------------------------------*/
