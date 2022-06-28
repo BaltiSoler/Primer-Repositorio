@@ -80,26 +80,40 @@
     margin-top: 170px;
     margin-left: 90px; }
 
+.dropdown {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.footerIndex {
+  border-top: 1px solid wheat;
+  transform: translateY(10px); }
+
 .footerPrincipal {
   display: flex;
-  text-align: right;
-  justify-content: end;
-  align-items: center; }
-  .footerPrincipal nav img {
-    height: 20px;
-    width: 20px;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 50px; }
-  .footerPrincipal nav .footerContactanos {
-    height: 23px;
-    width: 23px;
-    margin-right: 10px; }
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .footerPrincipal nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .footerPrincipal nav a {
+      height: 30px; }
+    .footerPrincipal nav img {
+      height: 20px;
+      width: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    .footerPrincipal nav .footerContactanos {
+      height: 23px;
+      width: 23px; }
 
 /*------------------------------------------------------ GRID INDEX  ---------------------------------------------------------------------*/
 .gridIndex {
   display: grid;
-  grid-template-rows: 9% auto auto auto 40px auto;
+  grid-template-rows: 9% auto auto auto 100px auto;
   grid-template-columns: auto auto auto;
   grid-template-areas: "header header header" "titulo titulo titulo" "videoPage1 videoPage1 videoPage1" "videoPag2 videoPag2 videoPag2" "boots boots boots" "footer footer footer"; }
 
@@ -1087,10 +1101,6 @@
 .disco {
   margin-right: 75px; }
 
-.discografia {
-  margin-top: 40px;
-  color: white; }
-
 .primeros4 {
   display: flex;
   flex-direction: row;
@@ -1102,19 +1112,21 @@
   flex-direction: row;
   justify-content: space-around; }
 
-.discografia img {
-  height: 200px;
-  width: 200px;
-  transition: all 1s; }
-  .discografia img:hover {
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    border: 1px solid gold; }
-
-.discografia h4 {
-  font-family: 'Rajdhani', sans-serif;
-  margin-bottom: 10px; }
+.discografia {
+  margin-top: 40px;
+  color: white; }
+  .discografia img {
+    height: 200px;
+    width: 200px;
+    transition: all 1s; }
+    .discografia img:hover {
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      border: 1px solid gold; }
+  .discografia h4 {
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 480px) {
   .bi-caret-right, .bi-caret-left {

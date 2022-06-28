@@ -113,21 +113,36 @@
         }
 } 
 
+.dropdown{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footerIndex{
+    border-top: 1px solid wheat;
+    transform: translateY(10px);
+}
+
 .footerPrincipal{
     display: flex;
-    text-align: right;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
         nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            a{
+                height: 30px;
+            }
             img{
                 @include sizes(20px,20px);
-                margin-left: 2px; margin-right: 2px;
-                margin-top: 50px;
+                margin-left: 20px; margin-right: 20px;
+                margin-top: 30px; margin-bottom: 20px;
             }
             .footerContactanos{
                 height: 23px; 
                 width: 23px;
-                margin-right: 10px;
             }
         }
 }
@@ -136,7 +151,7 @@
 
 .gridIndex {
     display: grid;
-    grid-template-rows: 9% auto auto auto 40px auto;
+    grid-template-rows: 9% auto auto auto 100px auto;
     grid-template-columns: auto auto auto;
     grid-template-areas: "header header header"
     "titulo titulo titulo"
@@ -1477,11 +1492,6 @@
     margin-right: 75px;
 }
 
-.discografia{
-    margin-top: 40px;
-    color: white;
-}
-
 .primeros4{
     display: flex;
     flex-direction: row;
@@ -1496,6 +1506,8 @@
 }
 
 .discografia{
+    margin-top: 40px;
+    color: white;
     img{
         @include sizes(200px,200px);
         transition: all 1s;
