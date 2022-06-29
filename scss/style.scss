@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 
 
 *{
@@ -17,177 +17,178 @@
 
 /*------------------------------------------------------Style del index----------------------------------------------------------------------*/
 
-.bodyIndex{
-    background-color: $color-principal;
-}
-
-.titulo{
-    font-family: 'Dancing Script', cursive;
-    color: black;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin: 30px;
-    margin-bottom: 10px;
-    transform: translateY(30px);
-}
-
-.headerUno{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.heaH5{
-    font-family: 'Rajdhani', sans-serif;
-    color: white;
-    margin-left: 10px;
-}
-
-
-.headerPrincipal{
-    li{
-        list-style-type: none;
+    .bodyIndex{
+        background-color: $color-principal;
     }
-    a{
-        text-decoration: none;
+    
+    .titulo{
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 30px;
+        margin-bottom: 10px;
+        transform: translateY(30px);
+    }
+    
+    .headerUno{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .heaH5{
+        font-family: 'Rajdhani', sans-serif;
         color: white;
+        margin-left: 10px;
     }
-} 
-
-.headerUno{
-    .regist{
-        margin-right: 10px;
+    
+    
+    .headerPrincipal{
         li{
-            font-family: 'Rajdhani', sans-serif;
+            list-style-type: none;
         }
-        a:hover{
-            text-decoration: underline gold;
-        }
-    }
-}
-
-.navPrincipal{
-    text-align: center;
         a{
-            padding: 10px;
-            border-left: 3px solid map-get($colores-border,prin);
-            border-right: 3px solid map-get($colores-border,prin);
-            border-collapse: collapse;
-            font-family: 'Abel', sans-serif;
+            text-decoration: none;
+            color: white;
         }
-        a:hover{
-            text-decoration: underline gold;
+    } 
+    
+    .headerUno{
+        .regist{
+            margin-right: 10px;
+            li{
+                font-family: 'Rajdhani', sans-serif;
+            }
+            a:hover{
+                text-decoration: underline gold;
+            }
         }
-}
-
-.navIndex{
-    transform: translateY(-25px);
-}
-
-.videoPage1{
-    text-align: center;
-    margin-top: 70px;
-    video{
-        border: 1px solid map-get($colores-border,prin);
     }
-}
-
-.videoPag2{
-    display: flex;
-    flex-direction: row;
-        .videoPage2-1{
-            video{
-                border: 1px solid map-get($colores-border,prin);
-                margin-top: 70px;
-                margin-left: 200px;
-            }
-        }
-        .videoPage3{
-            video{
-                border: 1px solid map-get($colores-border,prin);
-                margin-top: 170px;
-                margin-left: 90px;
-            }
-        }
-} 
-
-.dropdown{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.footerIndex{
-    border-top: 1px solid wheat;
-    transform: translateY(10px);
-}
-
-.footerPrincipal{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-        nav{
-            width: 100%;
-            display: flex;
-            justify-content: center;
+    
+    .navPrincipal{
+        text-align: center;
             a{
-                height: 30px;
+                padding: 10px;
+                border-left: 3px solid map-get($colores-border,prin);
+                border-right: 3px solid map-get($colores-border,prin);
+                border-collapse: collapse;
+                font-family: 'Abel', sans-serif;
             }
-            img{
-                @include sizes(20px,20px);
-                margin-left: 20px; margin-right: 20px;
-                margin-top: 30px; margin-bottom: 20px;
+            a:hover{
+                text-decoration: underline gold;
             }
-            .footerContactanos{
-                height: 23px; 
-                width: 23px;
-            }
+    }
+    
+    .navIndex{
+        transform: translateY(-25px);
+    }
+    
+    .videoPage1{
+        text-align: center;
+        margin-top: 70px;
+        iframe{
+            border: 1px solid map-get($colores-border,prin);
         }
-}
-
-/*------------------------------------------------------ GRID INDEX  ---------------------------------------------------------------------*/
-
-.gridIndex {
-    display: grid;
-    grid-template-rows: 9% auto auto auto 100px auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "header header header"
-    "titulo titulo titulo"
-    "videoPage1 videoPage1 videoPage1"
-    "videoPag2 videoPag2 videoPag2"
-    "boots boots boots"
-    "footer footer footer";
-}
-
-.headerPrincipal {
-    grid-area: header;
-}
-
-.titulo {
-    grid-area: titulo;
-}
-
-.videoPage1 {
-    grid-area: videoPage1;
-}
-
-.videoPag2 {
-    grid-area: videoPag2;
-}
-
-.footerPrincipal {
-    grid-area: footer;
-}
-
-.dropdown{
-    grid-area: boots;
-    text-align: center;
-    margin-top: 30px;
-}
+    }
+    
+    .videoPag2{
+        display: flex;
+        flex-direction: row;
+            .videoPage2-1{
+                iframe{
+                    border: 1px solid map-get($colores-border,prin);
+                    margin-top: 70px;
+                    margin-left: 200px;
+                }
+            }
+            .videoPage3{
+                iframe{
+                    border: 1px solid map-get($colores-border,prin);
+                    margin-top: 170px;
+                    margin-left: 90px;
+                }
+            }
+    } 
+    
+    .dropdown{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .footerIndex{
+        border-top: 1px solid wheat;
+        transform: translateY(10px);
+    }
+    
+    .footerPrincipal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+            nav{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                a{
+                    height: 30px;
+                }
+                img{
+                    @include sizes(20px,20px);
+                    margin-left: 20px; margin-right: 20px;
+                    margin-top: 30px; margin-bottom: 20px;
+                }
+                .footerContactanos{
+                    height: 23px; 
+                    width: 23px;
+                }
+            }
+    }
+    
+    /*------------------------------------------------------ GRID INDEX  ---------------------------------------------------------------------*/
+    
+    .gridIndex {
+        display: grid;
+        grid-template-rows: 9% auto auto auto 100px auto;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "header header header"
+        "titulo titulo titulo"
+        "videoPage1 videoPage1 videoPage1"
+        "videoPag2 videoPag2 videoPag2"
+        "boots boots boots"
+        "footer footer footer";
+    }
+    
+    .headerPrincipal {
+        grid-area: header;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    .videoPage1 {
+        grid-area: videoPage1;
+    }
+    
+    .videoPag2 {
+        grid-area: videoPag2;
+    }
+    
+    .footerPrincipal {
+        grid-area: footer;
+    }
+    
+    .dropdown{
+        grid-area: boots;
+        text-align: center;
+        margin-top: 30px;
+    }
 
 /*----------------------------------------------------------- MediaQuerie Index ----------------------------------------------------------------*/
+
 @media screen and (max-width: 480px) {
     
     *{
@@ -222,21 +223,19 @@
             width: 250px; 
             height: 250px;
             }
-    }
-
-    .videoPage2-1{
-        display: block;
-        transform: translateX(-100px);
-        margin-top: 2px;
-        margin-left: 7px;
-    }
-
-    .videoPage3{
-        display: block;
-        margin-top: -100px;
-        margin-left: 20px;
-        transform: translateX(-50px);
-    }
+            .videoPage2-1{
+                display: block;
+                transform: translateX(-100px);
+                margin-top: 2px;
+                margin-left: 7px;
+            }
+            .videoPage3{
+                display: block;
+                margin-top: -100px;
+                margin-left: 20px;
+                transform: translateX(-50px);
+            }
+        }
 }
 
 /*-------------------------------------------Style de la subpagina "registrarse"----------------------------------------------------------------*/
